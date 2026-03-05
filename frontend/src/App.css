@@ -7,6 +7,12 @@ body {
   padding: 0;
 }
 
+#root {
+
+  height: 100%;
+  width: 100%;
+}
+
 #search-bar {
 
   display: flex;
@@ -54,35 +60,170 @@ body {
   gap: 1rem;
 }
 
+.bottom-div {
+
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .types {
 
   display: flex;
   justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 90%;
 }
 
 .card {
 
   border: 2px solid black;
   border-radius: 10px;
-  
+  height: 32rem;
+  display: flex;
+  flex-direction: column;  
 }
 
 .image-div {
 
-  position: relative;
   height: 100%;
   width: 100%;
+  
 }
 
-.image-card {
+.select-seats {
 
-  height: 50%;
-  width: 100%;
+  height: 2rem;
+  background-color: #fcc600;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  width: 90%;
+  cursor: pointer;
 }
 
 .title-movie {
 
-  position: absolute;
-  top: 25rem;
   font-weight: bold;
+  color: white;
+}
+
+
+.details-movie {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  height:80%;
+  
+}
+
+.show-details {
+
+  display: flex;
+  width: 60rem;
+  height: 40rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  
+}
+
+.choose-seat {
+
+  width: 90%;
+  background-color: #fcc600;
+  border-radius: 10px;
+  border: none;
+  height: 2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.more-details {
+
+  display: flex;
+  justify-content: space-between;
+  width: 25rem;
+}
+
+.det {
+
+  background-color: #f2f3f5;
+  height: 2rem;
+  width: 30%;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-det {
+
+  height: 4rem;
+  background-color: #f8f9fa;
+  border: 1px solid black;
+  padding-left: 1rem;
+  border-radius: 10px;
+  width: 40%;
+
+}
+
+.more-det h4, .more-det p {
+
+  margin: 0;
+  margin-top: 10px;
+}
+
+.more-det-div {
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+
+}
+
+.back {
+
+  color: white;
+  height: 2rem;
+  width: 4rem;
+  background-color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttons button {
+
+  height: 3rem;
+  width: 7rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#back-button {
+
+  background-color: #f2f3f5;
+  border: none;
+}
+
+#start-button {
+
+  color: white;
+  background-color: black;
 }
